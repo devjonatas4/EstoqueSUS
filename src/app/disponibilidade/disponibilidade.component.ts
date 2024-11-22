@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { MedicamentoComponent } from '../medicamento/medicamento.component';
+import { MedicacoesComponent } from '../medicacoes/medicacoes.component';
 
 @Component({
   selector: 'app-disponibilidade',
@@ -8,7 +8,6 @@ import { MedicamentoComponent } from '../medicamento/medicamento.component';
   styleUrl: './disponibilidade.component.scss'
 })
 export class DisponibilidadeComponent {
-
 
 
 }
