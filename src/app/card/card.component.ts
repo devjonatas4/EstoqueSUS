@@ -8,6 +8,11 @@ import { Medicacao } from '../models/medicacao';
   styleUrl: './card.component.scss'
 })
 export class CardComponent {
-@Input() contato: Medicacao|null = null;
-}
+@Input() medicacao: Medicacao|null = null;
 
+
+
+  onClick() {​
+    alert('item ``' + this.medicacao?.nome + '`` Excluído!');​
+  }
+}
