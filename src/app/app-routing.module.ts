@@ -5,6 +5,7 @@ import { DisponibilidadeComponent } from './pages/disponibilidade/disponibilidad
 import { ListarComponent } from './pages/listar/listar.component';
 import { IncluirComponent } from './pages/incluir/incluir.component';
 import { CardComponent } from './card/card.component';
+import {BancoDadosComponent} from './pages/banco-dados/banco-dados.component';
 
 const routes: Routes = [
   { path: 'medicacoes', component: MedicacoesComponent },
@@ -12,6 +13,7 @@ const routes: Routes = [
   { path: 'listar', component: ListarComponent },
   { path: 'incluir', component: IncluirComponent },
   { path: 'card', component: CardComponent },
+  { path: 'banco-dados', component: BancoDadosComponent },
   { path: '', redirectTo: '/listar', pathMatch: 'full' }
 
 ];

@@ -10,9 +10,11 @@ import { Medicacao } from '../models/medicacao';
 export class CardComponent {
 @Input() medicacao: Medicacao|null = null;
 
-
-
-  onClick() {​
-    alert('item ``' + this.medicacao?.nome + '`` Excluído!');​
-  }
+  onClick() {
+    if (this.medicacao) {
+      alert(`item "${this.medicacao.nome}" Excluído!`);
+    } else {
+      alert('Nenhum item para excluir.');
+    };
+}
 }

@@ -13,10 +13,9 @@ import { QueueAction } from 'rxjs/internal/scheduler/QueueAction';
   templateUrl: './incluir.component.html',
   styleUrl: './incluir.component.scss'
 })
+
 export class IncluirComponent {
-onClear() {
-throw new Error('Method not implemented.');
-}
+
   constructor(
     private medicacoesService: MedicacoesService
   ){ }

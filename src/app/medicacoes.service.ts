@@ -5,11 +5,7 @@ import { Medicacao } from './models/medicacao';
   providedIn: 'root'
 })
 export class MedicacoesService {
- 
 
-  constructor() { }
-
-  
 private medicacoes: Medicacao[] = [
   {
     nome: "Dipirona",

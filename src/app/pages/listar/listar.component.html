@@ -1,1 +1,33 @@
-<p>listar works!</p>
+ <div style="display: flex; justify-content: center ; align-items: center; height: 80vh;">
+    <form [formGroup]="form">
+        <div class="form-row">
+            <div class="col-12">
+                <label style="font-size: 20px">Nome:</label>
+                <input type="text" class="form-control" formControlName="Nome" style="font-size: 20px;">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-12">
+                <label style="font-size: 20px">Fabricante:</label>
+                <input type="text" class="form-control" formControlName="Fabricante">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-12">
+                <label style="font-size: 20px">Disponibilidade:</label>
+                <input type="text" class="form-control" formControlName="Disponibilidade">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-12">
+                <label style="font-size: 20px">Quantidade Disponível:</label>
+                <input type="number" class="form-control" formControlName="Quantidade Disponível">
+            </div>
+        </div>
+
+
+        <button type="submit" class="btn btn-primary"(click)="onsubmit()">Incluir</button>
+        <button type="reset" class="btn btn-secondary" style="margin-left: 10px" (click)="onreset()">Limpar</button>
+
+    </form>
+</div>

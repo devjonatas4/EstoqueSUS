@@ -11,6 +11,7 @@ import { CapitalizePipe } from './capitalize.pipe';
 import { CardComponent } from './card/card.component';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
+import { BancoDadosComponent } from './pages/banco-dados/banco-dados.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     ListarComponent,
     IncluirComponent,
     CapitalizePipe,
-    CardComponent
+    CardComponent,
+    BancoDadosComponent
   ],
   imports: [
     BrowserModule,
