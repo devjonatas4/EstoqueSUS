@@ -4,16 +4,17 @@ Projeto gerado com : Angular CLI version 19.0.0.
 
 #Funcionalidades:
 
-Visualizar Estoque: Ver a quantidade atual de cada medicamento armazenado no posto de saúde.
-Registrar Retirada: Registrar a retirada de medicamentos do estoque.
-Atualizar Estoque: Atualizar o estoque com a chegada de novos medicamentos.
-Solicitar Medicamentos: Enviar solicitações à central em caso de falta de medicamentos.
+-Visualizar Estoque: Ver a quantidade atual de cada medicamento armazenado no posto de saúde.
+-Registrar Retirada: Registrar a retirada de medicamentos do estoque.
+-Atualizar Estoque: Atualizar o estoque com a chegada de novos medicamentos.
+-Solicitar Medicamentos: Enviar solicitações à central em caso de falta de medicamentos.
+
 #Tecnologias utilizadas:
 
-HTML: Para a estrutura do site.
-CSS: Para estilização e layout responsivo.
-TypeScript: Para manipulação do DOM e interação com o usuário.
-Angular: Para uma interface dinâmica e respons
+-HTML: Para a estrutura do site.
+-CSS: Para estilização e layout responsivo.
+-TypeScript: Para manipulação do DOM e interação com o usuário.
+-Angular: Para uma interface dinâmica e respons
 
 ## Development server
 
