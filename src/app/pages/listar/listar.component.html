@@ -1,33 +1,34 @@
- <div style="display: flex; justify-content: center ; align-items: center; height: 80vh;">
-    <form [formGroup]="form">
-        <div class="form-row">
-            <div class="col-12">
-                <label style="font-size: 20px">Nome:</label>
-                <input type="text" class="form-control" formControlName="Nome" style="font-size: 20px;">
-            </div>
-        </div>
-        <div class="form-row">
-            <div class="col-12">
-                <label style="font-size: 20px">Fabricante:</label>
-                <input type="text" class="form-control" formControlName="Fabricante">
-            </div>
-        </div>
-        <div class="form-row">
-            <div class="col-12">
-                <label style="font-size: 20px">Disponibilidade:</label>
-                <input type="text" class="form-control" formControlName="Disponibilidade">
-            </div>
-        </div>
-        <div class="form-row">
-            <div class="col-12">
-                <label style="font-size: 20px">Quantidade Disponível:</label>
-                <input type="number" class="form-control" formControlName="Quantidade Disponível">
-            </div>
-        </div>
-
-
-        <button type="submit" class="btn btn-primary"(click)="onsubmit()">Incluir</button>
-        <button type="reset" class="btn btn-secondary" style="margin-left: 10px" (click)="onreset()">Limpar</button>
-
-    </form>
+<div class="card" style="width: 20rem; height: 13rem; margin: 1rem">
+    <div class="card-body">
+        <h5 class="card-title">{{ medicacao?.nome | capitalize }}</h5>
+        <p class="card-text">Nome: {{ medicacao?.nome }}</p>
+        <p class="card-text">Fabricante: {{ medicacao?.fabricante }}</p>
+        <p class="card-text">Disponibilidade: {{ medicacao?.disponibilidade }}</p>
+        <p class="card-text">Quantidade: {{ medicacao?.quantidade }}</p>
+        <button class="btn btn-primary" (click)="onClick()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3-fill" viewBox="0 0 16 16">
+                <path d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5m-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5M4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06m6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528M8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5"/>
+            </svg>
+            Excluir
+        </button>
+    </div>
 </div>
+<div class="card" style="width: 20rem; height: 13rem; margin: 1rem">
+    <div class="card-body">
+        <h5 class="card-title">{{ medicacao?.nome | capitalize }}</h5>
+        <p class="card-text">Nome: {{ medicacao?.nome }}</p>
+        <p class="card-text">Fabricante: {{ medicacao?.fabricante }}</p>
+        <p class="card-text">Disponibilidade: {{ medicacao?.disponibilidade }}</p>
+        <p class="card-text">Quantidade: {{ medicacao?.quantidade }}</p>
+        <button class="btn btn-primary" (click)="onClick()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3-fill" viewBox="0 0 16 16">
+                <path d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5m-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5M4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06m6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528M8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5"/>
+            </svg>
+            Excluir
+        </button>
+    </div>
+</div>
+
+
+
+

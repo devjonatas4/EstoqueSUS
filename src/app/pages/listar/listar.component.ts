@@ -7,9 +7,8 @@ import { BancoDadosComponent } from '../banco-dados/banco-dados.component';
 
 @Component({
   selector: 'app-listar',
+  templateUrl: '../../listar.component.html',
   standalone: false,
-  
-  templateUrl: './listar.component.html',
   styleUrl: './listar.component.scss'
 })
 export class ListarComponent {
@@ -33,17 +32,6 @@ export class ListarComponent {
   getMedicacoes(): Medicacao[] {
     return this.medicacoesService.recuperarMedicacoes();
   }
-
-  onsubmit() {
-    let medicacao  = {nome:this.form.value.nome,
-                      fabricante: this.form.value.fabricante,
-                      disponibilidade: this.form.value.disponibilidade,
-                      quantidade: this.form.value.quantidade 
-    }
-    this.medicacoesService.inserirMedicacoes(medicacao);    
-    this.form.reset();
-  }
-
 
 }
 
