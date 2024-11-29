@@ -1,0 +1,33 @@
+<!-- <p>incluir works!</p> -->
+<div style="display: flex; justify-content: center; align-items: center; height: 80vh">
+    <form [formGroup]="form">
+        <div class="form-row">
+            <div class="col-12">
+                <label>Nome:</label>
+                <input type="text" class="form-control" formControlName="nome">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-12">
+                <label>Fabricante:</label>
+                <input type="text" class="form-control" formControlName="fabricante">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-12">
+                <label>Disponibilidade:</label>
+                <input type="number" class="form-control" formControlName="disponibilidade">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-12">
+                <label>Quantidade:</label>
+                <input type="number" class="form-control" formControlName="quantidade">
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary"(click)="onSubmit()">Incluir</button>
+    
+
+    </form>
+</div>
